@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #007BFF;
+    color: #e0f6c8;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: #e0f6c8;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    padding: 2rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #e0f6c8;
+    margin-top: 2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #ffd733;
+    border: 1px solid #ddd;
+}
+
+textarea {
+    width: 100%;       /* 拉伸到容器的寬度 */
+    height: 200px;     /* 調整高度 */
+    font-size: 16px;   /* 調整字體大小，讓內容更易於閱讀 */
+    padding: 10px;     /* 增加內邊距 */
+    border: 1px solid #ccc; /* 加入邊框 */
+    border-radius: 5px; /* 圓角邊框 */
+    resize: vertical;  /* 允許使用者自行調整高度 */
+}

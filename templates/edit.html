@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>編輯日記</h2>
+<form method="POST">
+    <input type="text" name="title" value="{{ diary.title }}" required>
+    <input type="text" name="author" value="{{ diary.author }}" required>
+    <textarea name="content" rows="10" style="width: 100%;" required>{{ diary.content }}</textarea>p
+    <button type="submit">儲存</button>
+</form>
+{% endblock %}

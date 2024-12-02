@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ diary.title }}</h2>
+<p>{{ diary.content }}</p>
+<p><small>作者：{{ diary.author }} | 日期：{{ diary.date.strftime('%Y-%m-%d') }}</small></p>
+<a href="/">回到日記列表</a>
+<a href="/edit/{{ diary.id }}">編輯</a>
+<form method="POST" action="/delete/{{ diary.id }}">
+    <button type="submit">刪除</button>
+</form>
+{% endblock %}

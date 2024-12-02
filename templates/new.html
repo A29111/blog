@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>新增日記</h2>
+<form method="POST">
+    <input type="text" name="title" placeholder="標題" required>
+    <input type="text" name="author" placeholder="作者" required>
+    <textarea name="content" placeholder="內容" rows="10" style="width: 100%;" required></textarea>
+    <button type="submit">提交</button>
+</form>
+{% endblock %}
